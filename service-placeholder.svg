@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Dental service image placeholder</title>
+  <desc id="desc">Generic placeholder for a dental treatment photograph.</desc>
+  <rect width="800" height="520" fill="#e9f7f5"/>
+  <circle cx="120" cy="90" r="120" fill="#d7efec"/>
+  <circle cx="700" cy="450" r="165" fill="#dbeef7"/>
+  <path d="M319 105c-85 8-125 78-95 167 26 77 44 169 78 169 28 0 22-105 98-105s70 105 98 105c34 0 52-92 78-169 30-89-10-159-95-167-38-4-57 21-81 21s-43-25-81-21z" fill="#fff" stroke="#15958f" stroke-width="12"/>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#20545d">Dental service image placeholder</text>
+</svg>

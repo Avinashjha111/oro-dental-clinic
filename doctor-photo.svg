@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lead dentist photo placeholder</title>
+  <desc id="desc">Placeholder for the lead dentist professional portrait.</desc>
+  <rect width="800" height="900" fill="#e7f5f3"/>
+  <circle cx="400" cy="305" r="145" fill="#abd9d4"/>
+  <path d="M170 820c15-218 98-340 230-340s215 122 230 340" fill="#fff" stroke="#85c8c1" stroke-width="10"/>
+  <path d="M345 480l55 110 55-110 70 35-40 305H315l-40-305z" fill="#15958f" opacity=".2"/>
+  <text x="400" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#20545d">Replace with: doctor-photo.jpg</text>
+</svg>
