@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a dental appointment at Oro Dental Care near Clock Tower, Muzaffarpur. Contact us by phone, email or online form.">
+  <title>Book Appointment | Oro Dental Care Muzaffarpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Shared fixed navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav-wrap" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Oro Dental Care home"><span class="logo-mark" aria-hidden="true">
+          <img src="images/oro-dental-logo.jpeg" alt="Logo">
+    </span><span class="logo-copy"><strong>Oro Dental Care</strong><small>Muzaffarpur</small></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="#contact">Contact</a></li><li><a class="btn btn-primary" href="appointment.html" aria-current="page">Book Appointment <span aria-hidden="true">→</span></a></li></ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Appointment page heading -->
+    <section class="page-hero">
+      <div class="container reveal"><div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Book Appointment</div><h1>Let’s plan your<br>healthier smile.</h1><p>Choose a preferred date and time. Our Muzaffarpur clinic team will contact you shortly to confirm availability.</p></div>
+    </section>
+
+    <!-- Booking form and clinic contact details -->
+    <section class="section appointment-section" id="contact">
+      <div class="container appointment-layout">
+        <div class="form-card reveal">
+          <div class="form-intro"><span class="eyebrow">Appointment Request</span><h2 style="font-size:clamp(1.7rem,3vw,2.35rem)">Tell us when you would like to visit</h2><p>Fields marked with an asterisk are required. This form sends a request; our team will call to confirm your slot.</p></div>
+
+          <!-- Confirmation is shown after successful client-side validation -->
+          <div class="success-message" id="successMessage" role="status" aria-live="polite" tabindex="-1"><span aria-hidden="true">✓</span><div><strong>Thank you! Your request has been received.</strong><p>We’ll contact you shortly to confirm your Oro Dental Care appointment.</p></div></div>
+
+          <form id="appointmentForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name <span>*</span></label>
+                <input class="form-control" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required minlength="2">
+                <small class="error-message">Please enter your name (at least 2 characters).</small>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile number" required pattern="[6-9][0-9]{9}">
+                <small class="error-message">Enter a valid 10-digit Indian mobile number.</small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                <small class="error-message">Please enter a valid email address.</small>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed <span>*</span></label>
+                <select class="form-control" id="service" name="service" required>
+                  <option value="">Select a service</option><option>General Checkup</option><option>Root Canal</option><option>Braces &amp; Orthodontics</option><option>Teeth Whitening</option><option>Dental Implants</option><option>Pediatric Dentistry</option><option>Other / Not Sure</option>
+                </select>
+                <small class="error-message">Please select a service.</small>
+              </div>
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date <span>*</span></label>
+                <input class="form-control" id="preferredDate" name="preferredDate" type="date" required>
+                <small class="error-message">Please select a current or future date.</small>
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time <span>*</span></label>
+                <select class="form-control" id="preferredTime" name="preferredTime" required>
+                  <option value="">Select a preferred time</option><option>9:00 AM – 11:00 AM</option><option>11:00 AM – 1:00 PM</option><option>2:00 PM – 4:00 PM</option><option>4:00 PM – 6:00 PM</option><option>6:00 PM – 8:00 PM</option>
+                </select>
+                <small class="error-message">Please select a preferred time.</small>
+              </div>
+              <div class="form-group full">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Tell us briefly about your dental concern (optional)"></textarea>
+                <small class="error-message">Please check your message.</small>
+              </div>
+              <div class="form-submit">
+                <button class="btn btn-primary" type="submit">Request Appointment <span aria-hidden="true">→</span></button>
+                <span class="form-note">No payment is required to request a slot.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Direct clinic contact and opening hours -->
+        <aside class="contact-card reveal reveal-delay-1">
+          <h3>Reach Oro Dental Care</h3>
+          <ul class="contact-list">
+            <li class="contact-item"><span class="mini-icon" aria-hidden="true">⌖</span><div><strong>Clinic Address</strong><span>123, Saraiyaganj Road, Near Clock Tower, Muzaffarpur, Bihar - 842001</span></div></li>
+            <li class="contact-item"><span class="mini-icon" aria-hidden="true">☎</span><div><strong>Call Us</strong><a href="tel:+919876543210">+91 98765 43210</a></div></li>
+            <li class="contact-item"><span class="mini-icon" aria-hidden="true">✉</span><div><strong>Email Us</strong><a href="mailto:info@orodentalcare.in">info@orodentalcare.in</a></div></li>
+          </ul>
+          <div class="hours-box"><h4>Clinic Hours</h4><div class="hours-row"><span>Monday – Saturday</span><strong>9 AM – 8 PM</strong></div><div class="hours-row"><span>Sunday</span><strong>10 AM – 2 PM</strong></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Google Maps placeholder centred on Muzaffarpur; replace query with exact clinic pin -->
+    <section class="map-section section-soft" aria-labelledby="mapHeading">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Find Us</span><h2 id="mapHeading">In the heart of Muzaffarpur</h2><p class="lead">Near Clock Tower on Saraiyaganj Road—convenient from Mithanpura, Brahmapura and surrounding areas.</p></div>
+        <div class="map-wrap reveal"><iframe title="Placeholder map showing Muzaffarpur, Bihar" src="https://www.google.com/maps?q=Muzaffarpur%2C%20Bihar%2C%20India&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">O</span><span class="logo-copy"><strong>Oro Dental Care</strong><small>Muzaffarpur</small></span></a><p>Gentle, modern dentistry for families across Muzaffarpur—because every healthy smile deserves thoughtful care.</p><div class="social-links" aria-label="Social media placeholders"><a href="#" aria-label="Facebook placeholder">f</a><a href="#" aria-label="Instagram placeholder">ig</a><a href="#" aria-label="YouTube placeholder">▶</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="appointment.html">Book Appointment</a></li></ul></div>
+      <div class="footer-col"><h4>Clinic Hours</h4><ul class="footer-links"><li>Mon–Sat: 9:00 AM–8:00 PM</li><li>Sunday: 10:00 AM–2:00 PM</li><li>Emergency: Please call us</li></ul></div>
+      <div class="footer-col"><h4>Contact Us</h4><ul class="footer-contact"><li><span class="footer-icon" aria-hidden="true">⌖</span><span>123, Saraiyaganj Road, Near Clock Tower, Muzaffarpur, Bihar - 842001</span></li><li><span class="footer-icon" aria-hidden="true">☎</span><a href="tel:+919876543210">+91 98765 43210</a></li><li><span class="footer-icon" aria-hidden="true">✉</span><a href="mailto:info@orodentalcare.in">info@orodentalcare.in</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-current-year>2026</span> Oro Dental Care. All rights reserved.</span><span>Designed by <a href="https://vyaparwallah.com" target="_blank" rel="noopener noreferrer">Vyapar Wallah</a></span></div>
+  </footer>
+</body>
+</html>
